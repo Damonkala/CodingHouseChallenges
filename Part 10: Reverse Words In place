@@ -1,0 +1,8 @@
+ function wordsReverser(str){
+    var words = str.split(" ");
+    var output = new Array();
+    words.forEach(function(word) {
+        output.push(word.split("").reverse().join("")); 
+    });
+    return output.join(" "); 
+};
