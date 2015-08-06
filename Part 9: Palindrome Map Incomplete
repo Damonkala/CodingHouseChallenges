@@ -1,4 +1,0 @@
-var str = "stash and pop on this level";
-[].map.call(str.split(" "), function(x) {
-  return x === str.split("").reverse();
-}).reverse();
