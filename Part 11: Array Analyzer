@@ -1,0 +1,25 @@
+var sum = 0;
+var med = 0;
+//var avg = 0;
+//var avg = Math.round(avg * 100) / 100;
+function arrayAnalyzer(values) {
+
+for( var i = 0; i < values.length; i++ ){
+    sum += parseInt( values[i], 10 ); 
+}
+var avg = sum/values.length;
+//return avg = "average: " + Math.round(avg * 100) / 100
+
+
+ values.sort( function(a,b) {return a - b;} );
+    var half = Math.floor(values.length/2);
+    if(values.length % 2)
+        med = values[half]
+        //return "median: " + values[half];
+    else
+        med = values[half]
+        //return "median: " + (values[half-1] + values[half]) / 2.0;
+        
+}
+
+arrayAnalyzer([7, -3, 0, 12, 44, -5, 3]);
