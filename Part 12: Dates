@@ -1,0 +1,73 @@
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+
+var date2 = new Date();
+var dd2 = 0
+var mm2 = 0
+var yyyy2 = 0
+
+var date3 = new Date();
+
+
+if(dd<10) {
+    dd='0'+dd
+} 
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+
+var date2 = new Date();
+var dd2 = 0
+var mm2 = 0
+var yyyy2 = 0
+
+//var date3 = new Date();
+
+
+if(dd<10) {
+    dd='0'+dd
+} 
+
+if(mm<10) {
+    mm='0'+mm
+} 
+
+function age (day2, month2, year2) {
+    dd2 = day2;
+    mm2 = month2;
+    yyyy2 = year2;
+    dd3 = dd - dd2;
+    mm3 = mm - mm2;
+    yyyy3 = yyyy - yyyy2;
+}
+
+function mathDate() {
+    if (dd3 < 30) {
+        if (dd3 < 0) {
+            return dd3 * -1 + " days ago."
+        } else {
+            return  dd3 + " days"
+        }  
+    }
+    else if (dd3 > 30) {
+        if (mm3 < 0) {
+            return mm3 * -1 + " months and " + dd3 +  " days ago.";
+        } else {
+            return mm3 + " months and " + dd3 + " days";
+        }
+    }
+    else if (mm3 > 12) {
+        if (mm3 < 0) {
+            return yyyy3 * -1 + " years and " + mm3 + " months and " + dd3 + " days ago.";
+        } else {
+            return yyyy3 + " years and " + mm3 + " months and " + dd3 + " days";
+        }
+    }
+}
+
+age(-45, -45, 9999)
+mathDate();
