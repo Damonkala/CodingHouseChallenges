@@ -1,6 +1,26 @@
 
 
 function arrayAnalyzer(values)  {
+    {{
+        var odds = 0;
+        for (var i = 0; i < values.length; i++){
+            if(values[i] % 2){
+                odds = odds + 1;
+}
+}
+        var odds = "Odds: " + odds;
+}
+
+}
+{
+        var negative = 0;
+        for (var i = 0; i < values.length; i++){
+            if(values[i] < 0){
+                negative = negative + 1;
+}
+}
+        var negative = "Negative: " + negative;
+}
 {
     var sum = 0;
 for( var i = 0; i < values.length; i++ ){
@@ -11,8 +31,6 @@ var avg = sum/values.length;
 avg2 = "Average: " + Math.round(avg * 100) / 100 
     
 }
-
-
 {
     values.sort( function(a,b) {return a - b;} );
 
@@ -20,11 +38,11 @@ avg2 = "Average: " + Math.round(avg * 100) / 100
 
     if(values.length % 2)
         med = "Median: " + values[half];
-        //return "Median: " + values[half];
+        
     else
         med = "Median: " + (values[half-1] + values[half]) / 2.0;
-        //return "Median: " + (values[half-1] + values[half]) / 2.0;
+        
 }
-return[avg2,med]
+return[avg2,med,negative,odds]
 }
 arrayAnalyzer([7, -3, 0, 12, 44, -5, 3]);
