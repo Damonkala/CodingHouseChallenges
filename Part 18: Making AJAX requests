@@ -1,0 +1,52 @@
+HTML:
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <meta charset="utf-8">
+  <title>Ajax Test</title>
+</head>
+<body>
+  <div class='container'>
+    <h1>Ajax Test</h1>
+
+    <button id='addCard'</button>
+  </div>
+
+  <script src='https://code.jquery.com/jquery-2.1.4.min.js'
+          scr='js.js' type='test/javascript'></script>
+</body>
+</html>
+
+Javascript:
+$(document).ready(init);
+
+
+function init(){
+  $("#addCard").click(addCardHandeler);
+}
+
+function addCardHandeler(){
+$.get("http://api.github.com/users/damonkala")
+  //$.ajax("http://httpbin.org/post",{
+  //       type: "POST",
+ //        data: {thing: "something"}
+ //        })
+  .done(function(data, status){
+    console.log("data",data);
+    console.log("status",status);
+  })
+  .fail(function(data, status){
+    console.log("data",data);
+    console.log("status",status);
+  });
+
+}
+
+function makeCard(data) {
+  var $card = $('<div>').addClass('card');
+  var $avatar = $('<img>').attr('src', data.avatar_url);
+  var $name = $('div').text(data.name);
+  $card.append($avatar).append($name);
+  return($card);
+}
