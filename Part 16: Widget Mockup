@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+  .col-sm-4 {
+    //height: 50px;
+    //background-color: blue;
+    color: white;
+    text-align: left;
+    
+  };
+  .col-sm-2 {
+    //height: 50px;
+    //background-color: blue;
+    color: white;
+    text-align: left;
+    
+  };
+
+</style>
+
+<body>
+  
+  
+  <div class="container">
+    
+    <div class="row">
+      
+      <div class="col-sm-4">Assorted Vegetables</div>
+      <div class="col-sm-4">Raspberries</div>
+      <div class="col-sm-4">Fresh Kiwis</div>
+   
+    </div>
+    
+    <div class="row">
+      
+      <div class="col-sm-4"><img src="http://extension.oregonstate.edu/gardening/sites/default/files/images/veggies_small.jpg">
+</div>
+      <div class="col-sm-4"><img src="http://www.naturipefarms.com/wp-content/uploads/2012/04/Raspberry-Image2.png"></div>
+      <div class="col-sm-4"><img src="http://cdn.images.express.co.uk/img/dynamic/1/285x214/50039_1.jpg"></div>
+
+    </div>
+    
+    <div class="row">
+      
+      <div class="col-sm-2">$1.00</div>
+      <div class="col-sm-2"><form>
+  Qty:
+  <input type="number" name="quantity" min="1" max="5">
+        </form></div>
+      <div class="col-sm-2">$2.50</div>
+      <div class="col-sm-2"><form>
+  Qty:
+  <input type="number" name="quantity" min="1" max="5">
+        </form></div>
+      <div class="col-sm-2">$0.30</div>
+      <div class="col-sm-2"><form>
+  Qty:
+  <input type="number" name="quantity" min="1" max="5">
+        </form></div>
+   
+    </div>
+    
+    <div class="row">
+      
+      <div class="col-sm-4">
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Add To Cart
+</button></div>
+      <div class="col-sm-4"><button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Add To Cart
+</button></div>
+      <div class="col-sm-4"><button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Add To Cart
+</button></div>
+   
+    </div>
+
+</body>
