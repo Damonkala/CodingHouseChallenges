@@ -4,6 +4,8 @@
     words.forEach(function(word) {
         output.push(word.split("").reverse().join("")); 
     });
-    return output.join(" "); 
-};
-wordsReverser("This is fun, hopefully.")
+    console.log(output.join(" "));
+    return output.join(" ");
+}
+wordsReverser("This is fun, hopefully.");
+//returns "sihT si ,nuf .yllufepoh"
