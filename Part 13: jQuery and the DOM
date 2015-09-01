@@ -8,5 +8,5 @@ $(document).ready(function () {
   color = ("000000" + color).slice(-6);
   color = "#" + color;     
   $('div').css('background',color);
-})
+});
 
