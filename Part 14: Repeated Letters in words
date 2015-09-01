@@ -1,4 +1,3 @@
-
 function wordSelector(str){
   var wordsAndLetters = {};   
   var count = 0;
