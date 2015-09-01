@@ -32,19 +32,25 @@ function mathDate() {
     if (yyyy3 >= 1) {
         if (mm3 >= 1) {
             if (dd3 >= 1) {
+                console.log(yyyy3 + " years and " + mm3 + " months and " + dd3 + " days.");
                 return yyyy3 + " years and " + mm3 + " months and " + dd3 + " days.";
             } else if (dd3 <= 0) {
+                console.log(yyyy3 + " years and " + mm3 + " months.");
                 return yyyy3 + " years and " + mm3 + " months.";
             }
         } else if (mm3 <= 0) {
+            console.log(yyyy3 + " years and " + dd3 + " days.");
             return yyyy3 + " years and " + dd3 + " days.";
         }
     } else if (yyyy3 <= 1 ){
         if (mm3 >= 1) {
+            console.log(mm3 + " months and " + dd3 + " days.");
             return mm3 + " months and " + dd3 + " days.";
         } else if (dd3 <= 0){
+            console.log(mm3 + " months.");
             return mm3 + " months.";
         } else if (mm3 <= 0){
+            console.log(dd3 + " days.");
             return dd3 + " days.";
         }
         
