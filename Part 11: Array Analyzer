@@ -1,5 +1,3 @@
-
-
 function arrayAnalyzer(values)  {
     {{
         var odds = 0;
@@ -8,18 +6,18 @@ function arrayAnalyzer(values)  {
                 odds = odds + 1;
 }
 }
-        var odds = "Odds: " + odds;
+         odds = "Odds: " + odds;
 }
 
 }
 {
         var negative = 0;
-        for (var i = 0; i < values.length; i++){
+        for (i = 0; i < values.length; i++){
             if(values[i] < 0){
                 negative = negative + 1;
 }
 }
-        var negative = "Negative: " + negative;
+        negative = "Negative: " + negative;
 }
 {
     var sum = 0;
@@ -28,7 +26,7 @@ for( var i = 0; i < values.length; i++ ){
 }
 
 var avg = sum/values.length;
-avg2 = "Average: " + Math.round(avg * 100) / 100 
+avg2 = "Average: " + Math.round(avg * 100) / 100; 
     
 }
 {
@@ -43,6 +41,7 @@ avg2 = "Average: " + Math.round(avg * 100) / 100
         med = "Median: " + (values[half-1] + values[half]) / 2.0;
         
 }
-return[avg2,med,negative,odds]
+console.log(avg2,med,negative,odds);
+return[avg2,med,negative,odds];
 }
 arrayAnalyzer([7, -3, 0, 12, 44, -5, 3]);
