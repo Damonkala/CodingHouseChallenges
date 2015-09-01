@@ -4,3 +4,4 @@ var sentence = "stash and pop on this level",
                     return isPalindrome;
                 });
 console.log(words);
+//Returns [false, false, true, false, false, true]
