@@ -6,7 +6,7 @@ for (i=0; i<=largest;i++){
         var largest=array[i];
     }
 }
-console.log(largest)
+console.log(largest);
 
 
 for (i=0; i<=largest;i++){
@@ -14,19 +14,19 @@ for (i=0; i<=largest;i++){
         var largest=array[i];
     }
 }
-console.log(largest)
+console.log(largest);
 
 
 function largestArrayElements(element, index, array) {
   if (array[i]>largest) {
-        var largest=array[i];
+        largest=array[i];
 }
 }
 
 [2, 7, 4, 8, 6, 4].forEach(largestArrayElements);
-console.log(largest)
+console.log(largest);
 
-var obj = { "wheels": 3, "horsepower": 600, "decal": "flames", "awesome": true , "holdsBarred": [] }
+var obj = { "wheels": 3, "horsepower": 600, "decal": "flames", "awesome": true , "holdsBarred": [] };
     
 for (var prop in obj) {
   console.log( prop + " " + obj[prop]);
@@ -35,14 +35,14 @@ for (var prop in obj) {
 
 
 var numbers = [1, 2, 5, 7, 11].map(function(x) { return x * x; });
-console.log(numbers)
+console.log(numbers);
 
 
 
 var product = [3, 5, 7, 9, 12].reduce(function(a, b) {
   return a + b;
 });
-console.log(product)
+console.log(product);
 
 
 function isOdd(value) {
@@ -55,4 +55,4 @@ console.log(filtered);
 var things = ['water', 'balloon', 'baseball', 'computer', 'notebook', 'frisbee'];
 things.sort();
 things.reverse();
-console.log(things)
+console.log(things);
