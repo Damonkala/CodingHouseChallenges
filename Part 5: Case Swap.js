@@ -7,9 +7,8 @@ var swapCase = function(letters){
             newLetters += letters[i].toLowerCase();
         }
     }
-    console.log(newLetters);
+    //console.log(newLetters);
     return(newLetters);
 };
 
-swapCase("Everybody Dance Now");
-//returns eVERYBODY dANCE nOW
+swapCase("Life is 10% what happens to you, and 90% of how you REACT to it");
