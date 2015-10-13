@@ -11,8 +11,8 @@ $(document).ready(function () {
  
 questionBank=	[["kangaroo","an animal"],["starbucks","a company"],["macaroni","a kind of food"],["washington","a place"],
 ["gecko","an animal"],["guillotine","a machine"],["tree","a plant"],["acdc","a rock band"],["superman","a superhero"]
-,["spongebob","a cartoon"],["atlanta","state capital"],["sacramento","capital of California"],["mario","videogame character"],["book","thing"],
-["television","technology"],["futurama","comedy sci-fi series"],["apple","a computer company"],["windows","a computer company"],["computer","technology"],
+,["spongebob","a cartoon"],["atlanta","state capital"],["sacramento","state capital"],["mario","videogame character"],["book","thing"],
+["television","technology"],["futurama","tv show"],["apple","a computer company"],["windows","a computer company"],["computer","technology"],
 ["salt","spice"],["pepper","spice"],["pencil","thing"],["pen","thing"],["money","thing"],
 ["potatos","a kind of food"],["camera","technology"],["pancakes","a kind of food"],["ketchup","a sauce"],["mustard","a sauce"],
 ["candy","a kind of food"],["coffe","a kind of drink"],["soda","a kind of drink"],["water","a kind of drink"],["milk","a kind of drink"],
@@ -45,7 +45,7 @@ function titleScreen(){
 	$('#gameContent').append('<div id="gameTitle">HANGMAN</div><div id="startButton" class="button">BEGIN</div>');		
 	$('#startButton').on("click",function (){gameScreen()});
 			
-}//display game
+}
 	
 	
 	
@@ -72,7 +72,7 @@ function gameScreen(){
 	$(document).on("keyup",handleKeyUp);
 	$(document).on("click",function(){$('#dummy').focus();});
 	$('#dummy').focus();
-}//gamescreen
+}
 			
 			
 function getWord(){
@@ -81,7 +81,7 @@ function getWord(){
 	currentClue=questionBank[rnd][1];
 	questionBank.splice(rnd,1); 
 	wordArray=currentWord.split("");			
-}//getword
+}
 			
 function handleKeyUp(event) {
 	if(event.keyCode>64 && event.keyCode<91){
@@ -98,13 +98,13 @@ function handleKeyUp(event) {
 				
 				if(input==wordArray[i]){found=true;$('#t'+i).append(input);}	
 				
-			}//for
+			}
 				
 			if(found){checkAnswer();}
 			else{wrongAnswer(input);}
-		}//if
-	}//if
-}//handlekeyup
+		}
+	}
+}
 	
 		
 function checkAnswer(){
@@ -115,7 +115,7 @@ function checkAnswer(){
 	if(currentAnswer==currentWord){
 		victoryMessage();
 	};
-}//checkanswer
+}
 		
 function wrongAnswer(a){
 	wrongAnswerCount++;
@@ -134,7 +134,7 @@ function victoryMessage(){
 			gameScreen()}
 		else{finalPage()}
 	});
-}//victory
+}
 		
 function defeatMessage(){
 	$(document).off("keyup", handleKeyUp);
@@ -144,11 +144,11 @@ function defeatMessage(){
 			gameScreen()}
 		else{finalPage()}
 	});
-}//defeat
+}
 
 function finalPage(){
 	$('#gameContent').empty();
 	$('#gameContent').append('<div id="finalMessage">You have finished all the words in the game!</div>');
-}//finalpage
+}
 	
-	});//doc ready
+	});
